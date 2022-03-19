@@ -481,6 +481,12 @@ footer{
     .contenedor-contacto{
         flex-direction: column;
     }
+    .contenedor-contacto-descripcion{
+        margin-top: 2rem;
+    }
+    #localidad-card-3{
+        margin-top: 2rem;
+    }
     header{
         flex-direction: column;
         height: auto;
@@ -541,5 +547,17 @@ footer{
     .contenedor-contacto-localidad .contenedor-mapa iframe{
        
         height: 15rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header-img{
+        text-align: center;
+    }
+    .header-img img{
+        width: 80%;
+    }
+    .portafolio-card-btn{
+        flex-direction: column;
     }
 }
