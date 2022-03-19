@@ -508,6 +508,9 @@ footer{
         width: 100%;
         margin-top: 2rem;
     }
+    .nav-small{
+        padding-top: 3rem;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -547,6 +550,9 @@ footer{
     .contenedor-contacto-localidad .contenedor-mapa iframe{
        
         height: 15rem;
+    }
+    .nav-small{
+        padding-top: 2rem;
     }
 }
 
