@@ -1,15 +1,7 @@
-
 <?php
-    $destinatario = 'nicolasfediuk@gmail.com';
-    $nombre = $_POST['nombre'];
+    $destino = 'nicolasfediuk@gmail.com';
     $asunto = $_POST['asunto'];
-    $mensaje = $_POST['mensaje'];
-    $email = $_POST['email'];
+    $mensaje = $_POST['mensaje'],
 
-    $header = "Enviado desde mi pagina";
-    $mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre;
-
-    mail($destinatario, $asunto, $mensajeCompleto,$header);
-    echo "<script>alert('correo enviado')</script>";
-    echo "<script> setTimeout(\"location.href=../index.html'\",1000)</script>";
+    mail($destino,$asunto,$mensaje);
 ?>
