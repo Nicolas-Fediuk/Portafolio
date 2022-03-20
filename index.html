@@ -10,7 +10,8 @@
     <title>Nicolas Fediuk</title>
 </head>
 <body>
-    <nav>
+
+    <nav class="nav-principal">
         <div class="nav-titulo">
             <h2> <span>NICOLÁS</span> FEDIUK</h2>
         </div>
@@ -21,34 +22,70 @@
                  
                 </li>
                 <li>
-                    <a href="#">Sobre mi</a>
+                    <a href="#sobreMi">Sobre mi</a>
                 </li>
                 <li>
-                    <a href="#">Educacion</a>
+                    <a href="#MisHabilidades">Habilidades</a>
                 </li>
                 <li>
-                    <a href="#">Portafolio</a>
+                    <a href="#MiEducacion">Educacion</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="#MiPortafolio">Portafolio</a>
+                </li>
+                <li>
+                    <a href="#MiContacto">Contacto</a>
                 </li>
             </ul>
         </div>
         <div class="nav-iconos">
-            <a href="#"><img src="img/nav/github (1).png" alt=""></a>
-            <a href="#"><img src="img/nav/linkedin (1).png" alt=""></a>
+            <a href="https://github.com/Nicolas-Fediuk" target="_BLANK"><img src="img/nav/github (1).png" alt=""></a>
+            <a href="https://www.linkedin.com/in/nicolas-fediuk-4b08bb1bb/" target="_BLANK"><img src="img/nav/linkedin (1).png" alt=""></a>
         </div>
     </nav>
 
-    <nav class="contenedor-nav-small">
-        <div class="nav-small">
-            <div class="nav-titulo">
-                <h2> <span>NICOLÁS</span> FEDIUK</h2>
+    <nav class="nav-secundario">
+        <div class="contenedor-nav-small">
+            <div class="nav-small">
+                <div class="nav-titulo">
+                    <h2> <span>NICOLÁS</span> FEDIUK</h2>
+                </div>
+    
+                <div class="fas fa-bars nav-action"></div>
             </div>
+        </div>
 
-            <div class="fas fa-bars nav-action"></div>
+        <div class="ventana-nav-secundario">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                 
+                </li>
+                <li>
+                    <a href="#sobreMi">Sobre mi</a>
+                </li>
+                <li>
+                    <a href="#MisHabilidades">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#MiEducacion">Educacion</a>
+                </li>
+                <li>
+                    <a href="#MiPortafolio">Portafolio</a>
+                </li>
+                <li>
+                    <a href="#MiContacto">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="iconos-nav-secundario">
+                <a href="https://github.com/Nicolas-Fediuk" target="_BLANK"><img src="img/nav/github (1).png" alt=""></a>
+                <a href="https://www.linkedin.com/in/nicolas-fediuk-4b08bb1bb/" target="_BLANK"><img src="img/nav/linkedin (1).png" alt=""></a>
+            </div>
         </div>
     </nav>
+
+
 
     
 
@@ -67,7 +104,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas accusantium iste sunt non quibusdam. Nesciunt cupiditate, eveniet dolorum ut fuga quo, modi quia illum veniam minus vero, nihil earum odit.</p>
 
         
-                <a class="btn" href="">Sobre mi</a>
+                <a class="btn" href="#sobreMi">Sobre mi</a>
             
                 
             </div>
@@ -76,7 +113,7 @@
             </div>
         </header>
 
-        <main>
+        <main id="sobreMi">
             <div class="contenedor">
                 <section>
                     <h2>SOBRE<span> MI</span> </h2>
@@ -89,22 +126,28 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe corrupti, commodi, distinctio quasi excepturi sed suscipit magni, illum laudantium ipsam sequi laborum aperiam dolores doloribus adipisci maiores dolorum. Quos, soluta.</p>
                             <div class="sobreMi-contenedor-datos">
                                 <div>
-                                    <p><span>Años: </span>23</p>
-                                    <p><span>Genero: </span>Masculino</p>
-                                    <p><span>Lenguajes: </span>Español nativo, Ingles A1</p>
+                                    <p><span>Años:</span></p>
+                                    <p>23</p>
+                                    <p><span>Genero: </span></p>
+                                    <p>Masculino</p>
+                                    <p><span>Lenguajes: </span></p>
+                                    <p>Español, Ingles A1</p>
                                 </div>
                                 <div>
-                                    <p><span>Telefono: </span>3329510212</p>
-                                    <p><span>Email: </span>nicolasfediuk@gmail.com</p>
-                                    <p><span>Pais: </span>Argentina</p>
+                                    <p><span>Telefono: </span></p>
+                                    <p>3329510212</p>
+                                    <p><span>Email: </span></p>
+                                    <p>nicolasfediuk@gmail.com</p>
+                                    <p><span>Pais: </span></p>
+                                    <p>Argentina</p>
                                 </div>
                             </div>
-                            <a class="btn" href="#">Descargar CV</a>
+                            <a class="btn" href="cv/Amarillo y Gris Creativo Currículum.pdf" download="Nicolas Fediuk CV">Descargar CV</a>
                         </div>
                     </div>
                 </section>
 
-                <section class="habilidades">
+                <section class="habilidades" id="MisHabilidades">
                     <h2><span>MIS </span>HABILIDADES</h2>
                     <div class="contenedor-habilidades">
                         <div class="habilidades-1">
@@ -126,7 +169,7 @@
                     
                 </section>
 
-                <section class="educacion">
+                <section class="educacion" id="MiEducacion">
                     <h2><span>MI </span>EDUCACIÓN</h2>
                     <div class="contenedor-educacion">
                         <div class="educacion-card card-1">
@@ -156,7 +199,7 @@
                     </div>
                 </section>
 
-                <section class="portafolio">
+                <section class="portafolio" id="MiPortafolio">
                     <h2><span>MI </span>PORTAFOLIO</h2>
                     <div class="contenedor-portafolio">
                         <div class="portafolio-card t-1">
@@ -170,8 +213,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis quam quod, a deleniti ratione molestias dicta minus quasi vel itaque nobis, sapiente perferendis explicabo distinctio quos nihil accusamus neque.</p>
                             </div>
                             <div class="portafolio-card-btn">
-                                <a class="btn" href="#">Ir a la pagina</a>
-                                <a class="btn"href="#">Ir al codigo</a>
+                                <a class="btn" href="https://affectionate-hopper-771beb.netlify.app/" target="_blank">Ir a la pagina</a>
+                                <a class="btn"href="https://github.com/Nicolas-Fediuk/GitarLa" target="_blank">Ir al codigo</a>
                             </div>
                         </div>
                         
@@ -186,8 +229,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis quam quod, a deleniti ratione molestias dicta minus quasi vel itaque nobis, sapiente perferendis explicabo distinctio quos nihil accusamus neque.</p>
                             </div>
                             <div class="portafolio-card-btn">
-                                <a class="btn" href="#">Ir a la pagina</a>
-                                <a class="btn"href="#">Ir al codigo</a>
+                                <a class="btn" href="https://nostalgic-khorana-136acd.netlify.app/" target="_blank">Ir a la pagina</a>
+                                <a class="btn"href="https://github.com/Nicolas-Fediuk/Cafeteria" target="_blank">Ir al codigo</a>
                             </div>
                         </div>
 
@@ -203,8 +246,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis quam quod, a deleniti ratione molestias dicta minus quasi vel itaque nobis, sapiente perferendis explicabo distinctio quos nihil accusamus neque.</p>
                             </div>
                             <div class="portafolio-card-btn">
-                                <a class="btn" href="#">Ir a la pagina</a>
-                                <a class="btn"href="#">Ir al codigo</a>
+                                <a class="btn" href="https://peaceful-engelbart-3af129.netlify.app/" target="_blank">Ir a la pagina</a>
+                                <a class="btn"href="https://github.com/Nicolas-Fediuk/Carrito-VentaCafe" target="_blank">Ir al codigo</a>
                             </div>
                         </div>
 
@@ -219,7 +262,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis quam quod, a deleniti ratione molestias dicta minus quasi vel itaque nobis, sapiente perferendis explicabo distinctio quos nihil accusamus neque.</p>
                             </div>
                             <div class="portafolio-card-btn">
-                                <a class="btn"href="#">Ir al codigo</a>
+                                <a class="btn"href="https://drive.google.com/drive/folders/1o4XkpW37XLk2FkcMmCGLtvUx3UTRSg4f?usp=sharing" target="_blank">Ir al codigo</a>
                             </div>
                         </div>
 
@@ -229,7 +272,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis quam quod, a deleniti ratione molestias dicta minus quasi vel itaque nobis, sapiente perferendis explicabo distinctio quos nihil accusamus neque.</p>
                             </div>
                             <div class="portafolio-card-btn">
-                                <a class="btn"href="#">Ir al codigo</a>
+                                <a class="btn"href="https://github.com/Nicolas-Fediuk/Ejercicios-MySql" target="_blank">Ir al codigo</a>
                             </div>
                         </div>
 
@@ -243,15 +286,15 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis quam quod, a deleniti ratione molestias dicta minus quasi vel itaque nobis, sapiente perferendis explicabo distinctio quos nihil accusamus neque.</p>
                             </div>
                             <div class="portafolio-card-btn">
-                                <a class="btn" href="#">Ir a la pagina</a>
-                                <a class="btn"href="#">Ir al codigo</a>
+                                <a class="btn" href="https://priceless-fermat-41d0b2.netlify.app/" target="_blank">Ir a la pagina</a>
+                                <a class="btn"href="https://github.com/Nicolas-Fediuk/card-1" target="_blank">Ir al codigo</a>
                             </div>
                         </div>
                     
                     </div>
                 </section>
 
-                <section>
+                <section id="MiContacto">
                     <h2>CONTACTA<span>ME</span></h2>
                     <div class="contenedor-contacto">
                         <div class="contenedor-contacto-descripcion">
@@ -273,11 +316,12 @@
 
                     <div class="contenedor-contacto-localidad">
                         <div class="contenedor-form">
-                            <form class="form">
-                                <input type="text" placeholder="Email">
-                                <input type="text" placeholder="Asunto">
-                                <textarea placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
-                                <input class="btn" id="btn-form" type="submit" value="Enviar">
+                            <form class="form" method="POST" action="php/correo.php" autocomplete="off">
+                                <input required type="text" placeholder="Nombre" name="nombre">
+                                <input required type="email" placeholder="Email" name="email">
+                                <input required type="text" placeholder="Asunto" name="asunto">
+                                <textarea name="mensaje" required placeholder="mensaje" id="" cols="30" rows="10" ></textarea>
+                                <input class="btn" id="btn-form" type="submit">
                             </form>
                         </div>
                         <div class="contenedor-mapa">
@@ -293,7 +337,7 @@
         </footer>
     </div>
 
-    
-
+    <script src="js/main.js"></script>
+    <php src="php/main.php"></php>
 </body>
 </html>

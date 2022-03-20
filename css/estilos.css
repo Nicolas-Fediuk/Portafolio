@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -5,6 +6,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     display: flex;
@@ -21,10 +23,22 @@ ul{
 h1{
     font-size: 5rem;
     margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 h2{
     font-size: 4rem;
     margin:5rem 0 5rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+a,h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 .contenedor-pricipal{
     display: flex;
@@ -83,26 +97,62 @@ span{
     margin-right: 1rem;
 }
 
-.contenedor-nav-small{
+.nav-secundario{
     background-color: rgb(34, 34, 34);
     width: 100%;
     height: 10vh;
     display: none;
 }
+.contenedor-nav-small{
+    height: 100%;
+}
 .nav-small{
     max-width: 90%;
     margin: 0 auto 0 auto;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 1rem;
+    align-items: center;
 }
 .nav-action{
     font-size: 2rem;
+    cursor: pointer;
 }
 .nav-small h2{
     padding: 0;
 }
+.ventana-nav-secundario{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    width: 20%;
+    height: 90vh;
+}
+.ventana-nav-secundario ul{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+.ventana-nav-secundario ul li{
+    padding: 2rem 0 0 2rem;
+}
+.ventana-nav-secundario ul li a{
+    color: black;
+    font-size: 2rem;
+    transition: all 0.3s; 
+}
+.ventana-nav-secundario ul li a:hover{
+    color: #c07c65;
+}
+.iconos-nav-secundario{
+    padding: 2rem 0 0 2rem;
+}
+.iconos-nav-secundario a:last-of-type{
+    margin-left: 1rem;
+}
+
 
 
 
@@ -124,6 +174,7 @@ header h3{
 header p{
     margin-top: 1rem;
     font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 .btn{
     margin-top: 1rem;
@@ -162,6 +213,7 @@ header p{
 .sobreMi-contenedor-descripcion p{
     font-size: 2rem;
     margin-bottom: 2rem;
+    line-height: 3rem;
 }
 .sobreMi-contenedor-datos{
     display: flex;
@@ -178,6 +230,10 @@ header p{
 
 .contenedor-habilidades img{
     width: 10rem;
+    transition: all 1s;
+}
+.contenedor-habilidades img:hover{
+    transform: scale(1.2);
 }
 .contenedor-habilidades div{
     display: flex;
@@ -425,7 +481,7 @@ footer{
 
 @media screen and (max-width:992px) {
     
-    nav{
+    .nav-principal{
         display: none;
     }
     header{
@@ -448,7 +504,7 @@ footer{
     body{
         flex-direction: column;
     }
-    .contenedor-nav-small{
+    .nav-secundario{
         display: block;
     }
 }
@@ -511,6 +567,9 @@ footer{
     .nav-small{
         padding-top: 3rem;
     }
+    .ventana-nav-secundario{
+        width: 28%;
+    } 
 }
 
 @media screen and (max-width:576px) {
@@ -566,4 +625,7 @@ footer{
     .portafolio-card-btn{
         flex-direction: column;
     }
+    .ventana-nav-secundario{
+        width: 45%;
+    } 
 }
