@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programador trainee con conocimentos en front y back end, futuro full stack en .NET e ingeniero en sistemas">
+    <meta name="keywords" content="programador, trainee, front-end, back-end,.net,base de datos">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="Nicolas Fediuk">
+    <meta name="author" content="Nicolas Fediuk">
+    <meta name="generator" content="Nicolas Fediuk">
+    <meta name="title" content="Nicolas Fediuk | Programador">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/icono.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Nicolas Fediuk</title>
@@ -31,7 +39,7 @@
                     <a href="#MiEducacion">Educacion</a>
                 </li>
                 <li>
-                    <a href="#MiPortafolio">Portafolio</a>
+                    <a href="#MiPortafolio">Portfolio</a>
                 </li>
                 <li>
                     <a href="#MiContacto">Contacto</a>
@@ -51,7 +59,7 @@
                     <h2> <span>NICOLÁS</span> FEDIUK</h2>
                 </div>
     
-                <div class="fas fa-bars nav-action"></div>
+                <div id="btn-nav" class="fas fa-bars nav-action"></div>
             </div>
         </div>
 
@@ -71,7 +79,7 @@
                     <a href="#MiEducacion">Educacion</a>
                 </li>
                 <li>
-                    <a href="#MiPortafolio">Portafolio</a>
+                    <a href="#MiPortafolio">Portfolio</a>
                 </li>
                 <li>
                     <a href="#MiContacto">Contacto</a>
@@ -91,11 +99,15 @@
 
     <div class="contenedor-pricipal">
     
-        <header class="contenedor">
+        <header class="contenedor" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <div class="header-presentacion">
+
+
                 <h3>Hola...</h3>
 
-            
+        
                 <h1>YO SOY<span> NICOLÁS FEDIUK</span></h1>
             
 
@@ -103,7 +115,6 @@
 
         
                 <a class="btn" href="#sobreMi">Sobre mi</a>
-            
                 
             </div>
             <div class="header-img">
@@ -119,20 +130,20 @@
 
                     <h2>SOBRE<span> MI</span> </h2>
 
-                    <div class="sobreMi-contenedor">
+                    <div class="sobreMi-contenedor" data-aos="fade-right">
 
                         <div class="sobreMi-contenedor-img">
                             <img src="img/main/sobre-mi.svg" alt="">
                         </div>
 
                         <div class="sobreMi-contenedor-descripcion">
-                            <h3>Soy programador trainee</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe corrupti, commodi, distinctio quasi excepturi sed suscipit magni, illum laudantium ipsam sequi laborum aperiam dolores doloribus adipisci maiores dolorum. Quos, soluta.</p>
+                            <h3>Programador trainee</h3>
+                            <p>Soy estuadiante de programación apasionado por la tecnología y la informática. Con gran predisposición al trabajo y en busca de su primera oportunidad para hacer experencia como profesional IT. Mi objetivo es ser Ing. en sistemas y ser desarrollador full stack con .NET</p>
                             <a class="btn" href="cv/Amarillo y Gris Creativo Currículum.pdf" download="Nicolas Fediuk CV">Descargar CV</a>
                         </div>
                     </div>
 
-                    <div class="contenedor-datos">
+                    <div class="contenedor-datos" data-aos="fade-right">
                         <div class="datos">
                             <div>
                                 <p><span>Años: </span>23</p>
@@ -150,7 +161,7 @@
     
                         <div class="datos">
                             <div>
-                                <p><span>Telefono: </span>3329510212</p>
+                                <p><span>Telefono: </span>+5493329510212</p>
                             </div>
                             
                             <div>
@@ -167,15 +178,16 @@
                     
                 </section>
 
-                <section class="habilidades" id="MisHabilidades">
+                <section class="habilidades" id="MisHabilidades" >
                     <h2><span>MIS </span>HABILIDADES</h2>
-                    <div class="contenedor-habilidades">
+                    <div class="contenedor-habilidades" data-aos="flip-left">
                         <div class="habilidades-1">
                             <img src="img/habilidades/html.png" alt="">
                             <img src="img/habilidades/css.png" alt="">
                             <img src="img/habilidades/sass.png" alt="">
                             <img src="img/habilidades/bootstrap.png" alt="">
                             <img src="img/habilidades/js.png" alt="">
+                            <img src="img/habilidades/asp.net.png" alt="">
                         </div>
                         <div class="habilidades-2">
                             <img src="img/habilidades/c-.png" alt="">
@@ -192,37 +204,49 @@
                 <section class="educacion" id="MiEducacion">
                     <h2><span>MI </span>EDUCACIÓN</h2>
                     <div class="contenedor-educacion">
-                        <div class="educacion-card card-1">
-                            <p>2016-2020</p>
-                            <img src="" alt="">
-                            <h3>ISFT N°118 | Tecnicatura superior en analisis de sistemas</h3>
-                            <p>Carrera de 3 años de nivel terciario orientado al los desarrollo de proyectos usando la metodologia tradicional de los sistemas y metodoligia agiles</p>
-                        </div>
-                        <div class="educacion-card card-2">
+
+                        <div class="educacion-card card-1" data-aos="fade-right">
                             <p>2020-2022</p>
                             <img src="" alt="">
                             <h3>UTN de Pacheco | Tecnicatura universitaria en programación</h3>
-                            <p>Carrera orienda al aprendidaze de la programacion back-end con ASP.NET, .NET Framework, C#, SqlServer, Java. Ademas del </p>
+                            <p>Carrera orienda al aprendidaze de la programación back-end con ASP.NET, .NET Framework, C#, SqlServer, Java. Cursando últimas 6 materias + 60hr de prácticas profesionales</p>
                         </div>
-                        <div class="educacion-card card-3" id="educacion-card3">
+
+                        <div class="educacion-card card-2" data-aos="fade-right">
+                            <p>2022</p>
+                            <img src="" alt="">
+                            <h3>CoderHouse | Maquetación web</h3>
+                            <p>Curso finalizado, adquiriendo los conocimientos de maquetación web</p>
+                        </div>
+
+                        <div class="educacion-card card-3" id="educacion-card3" data-aos="fade-right">
                             <p>2021-Actualidad</p>
                             <img src="" alt="">
                             <h3>Udemy | Maquetacion web | Javascript | MySql</h3>
                             <p>Cursos hechos y en proceso de manera autodidacta, con el objetivo de obtener nuevos conocimientos, practicar los que ya tengo o mejorarlos</p>
                         </div>
-                        <div class="educacion-card card-4">
-                            <p>2022</p>
+
+                        <div class="educacion-card card-4" data-aos="fade-right">
+                            <p>2021-Actualidad</p>
                             <img src="" alt="">
-                            <h3>CoderHouse | Maquetacion web</h3>
-                            <p>Curso finalizado, adquiriendo los conocimietos para el maquetado de desarrollo web</p>
+                            <h3>InHouse from Tucumán | Inglés</h3>
+                            <p>Curso de 3 horas semanales + prácticas. Mi objetivo es llegar a un nivel B1 en adelante</p>
                         </div>
+
+                        <div class="educacion-card card-5" data-aos="fade-right">
+                            <p>2016-2020</p>
+                            <img src="" alt="">
+                            <h3>ISFT N°118 | Tecnicatura superior en análisis de sistemas</h3>
+                            <p>Carrera de 3 años de nivel terciario orientado a desarrollos de proyectos utilizando la metodologia tradicional de los sistemas y metodologias ágiles</p>
+                        </div>
+                    
                     </div>
                 </section>
 
                 <section class="portafolio" id="MiPortafolio">
-                    <h2><span>MI </span>PORTAFOLIO</h2>
-                    <div class="contenedor-portafolio">
-                        <div class="portafolio-card t-1">
+                    <h2><span>MI </span>PORTFOLIO</h2>
+                    <div class="contenedor-portafolio" >
+                        <div class="portafolio-card t-1" data-aos="zoom-in">
                             <img src="img/portafolio/gitarLa.png" alt="">
                             <div class="portafolio-card-habilidades">
                                 <img src="img/habilidades/html.png" alt="">
@@ -230,7 +254,7 @@
                                 <img src="img/habilidades/css.png" alt="">
                             </div>
                             <div class="portafolio-card-descripcion">
-                                <p>Sitio web estatico de 5 paginas para la venta de guitarras electricas</p>
+                                <p>Sitio web estático de 5 páginas para la venta de guitarras eléctricas. Desarrollado con el fin de practicar mis conocimientos con el framework Booststrap</p>
                             </div>
                             <div class="portafolio-card-btn">
                                 <a class="btn" href="https://affectionate-hopper-771beb.netlify.app/" target="_blank">Ir a la pagina</a>
@@ -238,7 +262,7 @@
                             </div>
                         </div>
                         
-                        <div class="portafolio-card t-2">
+                        <div class="portafolio-card t-2" data-aos="zoom-in">
                             <img src="img/portafolio/bohemio.png" alt="">
                             <div  class="portafolio-card-habilidades">
                                 <img src="img/habilidades/html.png" alt="">
@@ -246,7 +270,7 @@
                                 <img src="img/habilidades/sass.png" alt="">
                             </div>
                             <div class="portafolio-card-descripcion">
-                                <p>Sitio web estatico de 6 paginas representando un restaurante, con el objetivo de visualizar el servicio y alimentos que ofrece el lugar, y una descripcion del mismo</p>
+                                <p>Sitio web estático de 6 páginas representando un restaurante, con el objetivo de visualizar el servicio y alimentos que ofrece el lugar, y una descripcion del mismo</p>
                             </div>
                             <div class="portafolio-card-btn">
                                 <a class="btn" href="https://nostalgic-khorana-136acd.netlify.app/" target="_blank">Ir a la pagina</a>
@@ -254,7 +278,7 @@
                             </div>
                         </div>
 
-                        <div class="portafolio-card t-3" id="portafolio-card-3">
+                        <div class="portafolio-card t-3" id="portafolio-card-3" data-aos="zoom-in">
                             <img src="img/portafolio/cafeteria.png" alt="">
                             <div  class="portafolio-card-habilidades">
                                 <img src="img/habilidades/html.png" alt="">
@@ -263,7 +287,7 @@
                                 <img src="img/habilidades/js.png" alt="">
                             </div>
                             <div class="portafolio-card-descripcion">
-                                <p>Sitio web en desarrollo, maquetado, con carrito de compra y favorito, usando Javascript (DOM, eventos y localstorage)</p>
+                                <p>Sitio web en desarrollo, maquetado, con carrito de compra y favorito, y agregándole ciertas funcionalidades con Javascript (DOM, eventos y localstorage)</p>
                             </div>
                             <div class="portafolio-card-btn">
                                 <a class="btn" href="https://peaceful-engelbart-3af129.netlify.app/" target="_blank">Ir a la pagina</a>
@@ -271,7 +295,7 @@
                             </div>
                         </div>
 
-                        <div class="portafolio-card t-4">
+                        <div class="portafolio-card t-4" data-aos="zoom-in">
                             <img src="img/portafolio/net.png" alt="">
                             <div  class="portafolio-card-habilidades">
                                 <img src="img/habilidades/NET-Framework (3).jpg" alt="">
@@ -279,31 +303,31 @@
                                 <img src="img/habilidades/sql-server.png" alt="">
                             </div>
                             <div class="portafolio-card-descripcion">
-                                <p>Aplicacion web hecha en el tercer cuatrimestre de la facultad, por mi y 3 personas mas</p>
+                                <p>Aplicación web hecha en el tercer cuatrimestre de la facultad, por mi y 3 personas mas. Es un sofware que gestiona insumos de computación para la venta</p>
                             </div>
                             <div class="portafolio-card-btn">
                                 <a class="btn"href="https://drive.google.com/drive/folders/1o4XkpW37XLk2FkcMmCGLtvUx3UTRSg4f?usp=sharing" target="_blank">Ir al codigo</a>
                             </div>
                         </div>
 
-                        <div class="portafolio-card t-5">
+                        <div class="portafolio-card t-5" data-aos="zoom-in">
                             <img src="img/habilidades/mysql.png" alt="">
                             <div class="portafolio-card-descripcion">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis quam quod, a deleniti ratione molestias dicta minus quasi vel itaque nobis, sapiente perferendis explicabo distinctio quos nihil accusamus neque.</p>
+                                <p>Ejercicios de práctica resueltos en MySql Workbench </p>
                             </div>
                             <div class="portafolio-card-btn">
                                 <a class="btn"href="https://github.com/Nicolas-Fediuk/Ejercicios-MySql" target="_blank">Ir al codigo</a>
                             </div>
                         </div>
 
-                        <div class="portafolio-card t-6">
+                        <div class="portafolio-card t-6" data-aos="zoom-in">
                             <img src="img/portafolio/card.png" alt="">
                             <div  class="portafolio-card-habilidades">
                                 <img src="img/habilidades/html.png" alt="">
                                 <img src="img/habilidades/css.png" alt="">
                             </div>
                             <div class="portafolio-card-descripcion">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis quam quod, a deleniti ratione molestias dicta minus quasi vel itaque nobis, sapiente perferendis explicabo distinctio quos nihil accusamus neque.</p>
+                                <p>Ejercicio de práctica con HTML5 y CSS3</p>
                             </div>
                             <div class="portafolio-card-btn">
                                 <a class="btn" href="https://priceless-fermat-41d0b2.netlify.app/" target="_blank">Ir a la pagina</a>
@@ -318,29 +342,29 @@
 
                     <h2>CONTACTA<span>ME</span></h2>
 
-                    <div class="contenedor-contacto">
+                    <div class="contenedor-contacto" data-aos="fade-right">
                         <div class="contenedor-contacto-descripcion">
                             <a href="mailto:nicolasfediuk@gmail.com?subject=Hola%20Nicolas%20quiero%20contactarme%20con%20vos."><img src="img/contacto/email.svg" alt=""></a> 
-                            <p>nicolasfediuk@gmail.com</p>
+                            <p>Email</p>
                         </div>
                         <div class="contenedor-contacto-descripcion">
                             <a href="https://api.whatsapp.com/send?phone=+5493329510212&text=Hola%20Nicolas%20quiero%20contactarme%20con%20vos." target="_blank"> <img class="telefono" src="img/contacto/wapp.svg" alt=""></a>
-                            <p>3329510212</p>
+                            <p>whatsapp</p>
                         </div>
                     </div>
                     
-                    <div class="contenedor-contacto">
+                    <div class="contenedor-contacto" data-aos="fade-right">
                         <div class="contenedor-contacto-descripcion">
                             <a href="tel:+5493329510212"> <img class="telefono" src="img/contacto/telefono.svg" alt=""></a>
-                            <p>3329510212</p>
+                            <p>Teléfono</p>
                         </div>
                         <div class="contenedor-contacto-descripcion">
-                            <a href="https://www.linkedin.com/in/nicolas-fediuk-4b08bb1bb/"> <img class="telefono" src="img/contacto/linked.svg" alt=""></a>
-                            <p>3329510212</p>
+                            <a href="https://www.linkedin.com/in/nicolas-fediuk-4b08bb1bb/"> <img class="telefono" src="img/contacto/834713_linkedin_icon.svg" alt=""></a>
+                            <p>linkedin</p>
                         </div>
                     </div>
                         
-                    <div class="ubicacion-iframe">
+                    <div class="ubicacion-iframe" data-aos="fade-right">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53116.08019505035!2d-59.7002856550598!3d-33.689407243208144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba22ed0eb1a55f%3A0xe5f2bb57c8ee993a!2sSan%20Pedro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647780667172!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     
@@ -354,5 +378,9 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

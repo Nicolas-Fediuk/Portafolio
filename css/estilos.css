@@ -49,6 +49,23 @@ a,h3{
     max-width: 90%;
     margin: 0 auto 0 auto;
 }
+.btn{
+    margin-top: 1rem;
+    background-color: #c07c65;
+    color: #f5f5f5;
+    text-decoration: none;
+    display: inline-block;
+    width: 15rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+.btn:hover{
+    font-size: 2rem;
+}
 
 
 /*-----------------------------------------------*/
@@ -94,7 +111,7 @@ span{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap:2rem
+    gap:2rem;
 }
 .nav-iconos img{
     width: 4rem;
@@ -105,7 +122,8 @@ span{
     background-color: rgb(34, 34, 34);
     width: 100%;
     height: 10vh;
-    display: none;
+    display: none; 
+    z-index: 1;
 }
 .contenedor-nav-small{
     height: 100%;
@@ -135,6 +153,7 @@ span{
     width: 20%;
     height: 90vh;
 }
+
 .ventana-nav-secundario ul{
     display: flex;
     flex-direction: column;
@@ -162,6 +181,7 @@ span{
 
 
 /*--------------------------------------------*/
+
 header{
     height: 100vh;
     display: flex;
@@ -183,23 +203,11 @@ header h3{
     width: 100%;
 }
 header p{
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    margin:1rem 0 2rem 0;
+    font-size: 2rem;
     line-height: 2.5rem;
 }
-.btn{
-    margin-top: 1rem;
-    background-color: #c07c65;
-    color: #f5f5f5;
-    text-decoration: none;
-    display: inline-block;
-    width: 15rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-}
+
 
 /*---------------------------------------------*/
 .sobreMi-contenedor{
@@ -235,6 +243,7 @@ header p{
     display: flex;
     gap: 2rem;
 }
+
 .datos p{
     font-size: 2rem;
     padding: 1rem;
@@ -254,7 +263,7 @@ header p{
 
 .contenedor-habilidades img{
     width: 10rem;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .contenedor-habilidades img:hover{
     transform: scale(1.2);
@@ -275,6 +284,7 @@ header p{
     grid-template-areas: 
     "card1 card2"
     "card3 card4"
+    "card5 card5"
     ;
     gap:2rem;
 }
@@ -315,6 +325,9 @@ header p{
 }
 .card-4{
     grid-area: card4;
+}
+.card-5{
+    grid-area: card5;
 }
 
 /*----------------------------------------------*/
@@ -399,7 +412,12 @@ header p{
     border-radius: 1rem;
     box-shadow: 0px 0px 8px black;
     width: 100%;
+    transition: all 0.5s;
 
+}
+.contenedor-contacto-descripcion:hover{
+    background-color: #c07c65;
+    color: white;
 }
 .contenedor-contacto-descripcion img{
     width: 10rem;
@@ -415,7 +433,11 @@ header p{
     padding: 2rem 3rem 2rem 3rem;
     box-shadow: 0px 0px 8px black;
     border-radius: 1rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    transition: all 0.5s;
+}
+.ubicacion-iframe:hover{
+    background-color: #c07c65;
 }
 .ubicacion-iframe iframe{
     width: 100%;
@@ -551,6 +573,7 @@ footer{
         "card2"
         "card3" 
         "card4"
+        "card5"
         ;
     }
     .contenedor-portafolio{

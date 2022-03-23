@@ -1,5 +1,6 @@
 const btnNav = document.querySelector(".nav-action");
 const nav = document.querySelector(".ventana-nav-secundario");
+const header = document.querySelector("#header");
 
 cargarEvento();
 
@@ -9,6 +10,7 @@ function cargarEvento(){
 
 function mostrarNav(){
     if(nav.style.display == "none"){
+
         nav.style.display = "block";
     }
     else{
@@ -19,3 +21,4 @@ function mostrarNav(){
 window.onscroll = () =>{
     nav.style.display = 'none';
 }
+
