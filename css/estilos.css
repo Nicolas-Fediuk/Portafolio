@@ -64,7 +64,7 @@ a,h3{
     transition: all 0.5s;
 }
 .btn:hover{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 
@@ -124,6 +124,7 @@ span{
     height: 10vh;
     display: none; 
     z-index: 1;
+    
 }
 .contenedor-nav-small{
     height: 100%;
@@ -149,9 +150,10 @@ span{
     position: absolute;
     right: 0;
     top: 100%;
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     width: 20%;
     height: 90vh;
+    
 }
 
 .ventana-nav-secundario ul{
@@ -239,6 +241,9 @@ header p{
     flex-direction: column;
     align-items: center;
 }
+.contenedor-datos div:last-of-type{
+    margin-top: 2rem;
+}
 .datos{
     display: flex;
     gap: 2rem;
@@ -253,6 +258,7 @@ header p{
 }
 .datos div:last-of-type{
     margin: 0;
+
 }
 
 /*----------------------------------------------*/
@@ -370,6 +376,7 @@ header p{
 .portafolio-card-btn{
     display: flex;
     justify-content: space-around;
+    align-items:baseline;
 }
 .t-1{
     grid-area: t1;
@@ -390,8 +397,8 @@ header p{
     grid-area: t5;
 }
 .t-5 img{
-   height: 35rem;
-   padding: 3rem;
+   height: 32rem;
+   padding: 3rem 5rem 3rem 5rem;
 }
 .t-6{
     grid-area: t6;
@@ -433,7 +440,7 @@ header p{
     padding: 2rem 3rem 2rem 3rem;
     box-shadow: 0px 0px 8px black;
     border-radius: 1rem;
-    margin-top: 4rem;
+    margin:4rem 0 4rem 0;
     transition: all 0.5s;
 }
 .ubicacion-iframe:hover{
@@ -442,13 +449,13 @@ header p{
 .ubicacion-iframe iframe{
     width: 100%;
     height: 100%;
+
 }
 
 /*-----------------------------------------------*/
 
 footer{
     background-color: white;
-    margin-top: 2rem;
     padding: 2rem;
     align-items: center;
     font-size: 2rem;
