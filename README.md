@@ -5,7 +5,6 @@ Sitio web desarrollado por mi, alojado en un servido con dominio para mostrar mi
 ### Tecnologias usadas
 - HTML
 - CSS
-- SCSS
 - JavaScript
 
 [http://https://nicolasfediuk.com/](http://https://nicolasfediuk.com/)
