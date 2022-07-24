@@ -7,4 +7,4 @@ Sitio web desarrollado por mi, alojado en un servido con dominio para mostrar mi
 - CSS
 - JavaScript
 
-[http://https://nicolasfediuk.com/](http://https://nicolasfediuk.com/)
+[http://nicolasfediuk.com/](http://https://nicolasfediuk.com/)
