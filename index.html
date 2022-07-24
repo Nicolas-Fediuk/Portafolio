@@ -15,9 +15,10 @@
     <meta name="generator" content="Nicolas Fediuk">
     <meta name="title" content="Nicolas Fediuk - Programador">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/icono.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Nicolas Fediuk</title>
 </head>
 
@@ -394,9 +395,12 @@
                         <form id="form">
                             <input class="form-nombre" name="name" type="text" placeholder="Nombre" required>
                             <input class="form-email" name="email" type="email" placeholder="Email" required>
-                            <textarea class="form-mensaje" name="message" id="" rows="10" cols="50" placeholder="Asunto"
-                                required></textarea>
-                            <input type="submit" id="button" value="Enviar">
+                            <textarea class="form-mensaje" name="message" id="" rows="10" cols="50" placeholder="Asunto" required></textarea>
+                            <div class="contenedor-contacto-form-boton">
+                                <input type="submit" id="button" value="Enviar">
+                                <p class="mensajeError"></p>
+                            </div>
+                            
                         </form>
                         <script type="text/javascript"
                             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -419,12 +423,12 @@
             <p>Creado por<span> Nicolas Fediuk</span> | &copyCopyright todos los derechos reservados</p>
         </footer>
     </div>
-
-    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
     <script>
         AOS.init();
     </script>
+    
 </body>
 
 </html>

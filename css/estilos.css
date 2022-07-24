@@ -476,6 +476,15 @@ textarea{
 #button:hover{
     font-size: 1.6rem;
 }
+.contenedor-contacto-form-boton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-contacto-form-boton p{
+    color: red;
+    font-size: 1.3rem;
+}
 .ubicacion-iframe{
     background-color: white;
     padding: 2rem;
@@ -606,6 +615,10 @@ footer{
     .ventana-nav-secundario{
         width: 28%;
     } 
+    .contenedor-contacto-form-boton{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:654px) {
