@@ -150,7 +150,7 @@ span{
     position: absolute;
     right: 0;
     top: 100%;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(34, 34, 34);
     width: 20%;
     height: 90vh;
     
@@ -165,7 +165,7 @@ span{
     padding: 2rem 0 0 2rem;
 }
 .ventana-nav-secundario ul li a{
-    color: black;
+    color: #f5f5f5;
     font-size: 2rem;
     transition: all 0.3s; 
 }
@@ -347,6 +347,7 @@ header p{
     "t1 t2"
     "t3 t4"
     "t5 t6"
+    "t7 t8"
     ;
     gap: 2rem;
 }
@@ -403,7 +404,19 @@ header p{
 .t-6{
     grid-area: t6;
 }
-
+.t-7{
+    grid-area: t7;
+}
+.t-8{
+    grid-area: t8;
+}
+#img-portafolio{
+    display: flex;
+    justify-content: center;
+}
+#img-portafolio img{
+    width: 48%;
+}
 /*-----------------------------------------------*/
 
 .contenedor-contacto{
@@ -435,8 +448,8 @@ header p{
 }
 .contenedor-contacto-form{
     display: flex;
-    justify-content: space-around;
-    margin: 5rem 0;
+    justify-content: space-between;
+    margin-bottom: 5rem;
 }
 .contenedor-contacto-form form{
     display: flex;
@@ -657,6 +670,8 @@ footer{
         "t4"
         "t5" 
         "t6"
+        "t7"
+        "t8"
         ;
     }
     .portafolio-card-btn{

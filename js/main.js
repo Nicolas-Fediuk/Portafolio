@@ -30,8 +30,6 @@ function validarFormulario(e) {
         nombre.style.borderBottom = "1px solid red";
     }
 
-
-
     if (validarCorreo.test(email.value)) {
         email.style.borderBottom = "1px solid green";
     }
@@ -47,8 +45,6 @@ function validarFormulario(e) {
         mensaje.style.borderBottom = "1px solid red";
     }
 }
-
-
 
 function enviarFormulario(){
     if(validarCorreo.test(email.value) && validarNombre.test(nombre.value) && mensaje.value != ""){
@@ -91,14 +87,6 @@ function borrarCampos(){
     mensaje.style.borderBottom = "1px solid black";
     p.textContent = "";
 }
-
-
-
-
-    
-    
-
-
 
 function mostrarNav() {
     if (nav.style.display == "none") {
