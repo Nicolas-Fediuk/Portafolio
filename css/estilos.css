@@ -124,27 +124,36 @@ span{
     height: 10vh;
     display: none; 
     z-index: 1;
-    
+    transition: transform .5s;
+}
+.animar-nav-secundario{
+    /* --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    --clip: polygon(100% 1%, 100% 0, 100% 100%, 100% 100%);
 }
 .contenedor-nav-small{
-    height: 100%;
-}
-.nav-small{
+    height: 90%;
     max-width: 90%;
     margin: 0 auto 0 auto;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.contenedor-nav-small:hover{
+    --clip: polygon(100% 1%, 100% 0, 100% 100%, 100% 100%);
+}
+
+.contenedor-nav-small h2{
+    padding: 0;
+    font-size: 3rem;
+    margin-right: 5rem;
+    
+}
+
 .nav-action{
     font-size: 2rem;
     cursor: pointer;
 }
 
-.nav-small h2{
-    padding: 0;
-}
 .ventana-nav-secundario{
     display: none;
     position: absolute;
@@ -153,7 +162,7 @@ span{
     background-color: rgb(34, 34, 34);
     width: 20%;
     height: 90vh;
-    
+    clip-path: var(--clip);
 }
 
 .ventana-nav-secundario ul{
@@ -183,6 +192,43 @@ span{
 
 
 /*--------------------------------------------*/
+
+
+/**********************************************/
+
+/*   Intento boton  */
+
+/***********************************************/
+
+.bars__menu{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 3rem;
+    transform: translate(-50%,-50%);
+}
+
+.bars__menu span{
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: white;
+    margin-top: 0.6rem;
+    transition: all 200ms;
+    transform-origin: 0px 100%;
+}
+
+.activeline--top{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+.activeline--middle{
+    transform: translateX(1.6rem);
+    opacity: 0;
+}
+.activeline--bottom{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+/****************************************/
+
 
 header{
     height: 100vh;
@@ -417,6 +463,7 @@ header p{
 #img-portafolio img{
     width: 48%;
 }
+
 /*-----------------------------------------------*/
 
 .contenedor-contacto{

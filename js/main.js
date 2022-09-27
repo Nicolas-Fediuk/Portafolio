@@ -5,7 +5,13 @@ const nombre = document.querySelector(".form-nombre");
 const email = document.querySelector(".form-email");
 const mensaje = document.querySelector(".form-mensaje");
 const btn = document.getElementById('button');
-const p = document.querySelector(".mensajeError")
+const p = document.querySelector(".mensajeError");
+
+const barAnimado = document.querySelector(".bars__menu");
+let line1 = document.querySelector(".line--top");
+let line2 = document.querySelector(".line--middle");
+let line3 = document.querySelector(".line--bottom");
+
 
 cargarEvento();
 
@@ -15,6 +21,17 @@ function cargarEvento() {
     email.addEventListener("blur", validarFormulario);
     mensaje.addEventListener("blur", validarFormulario);
     btn.addEventListener("click",enviarFormulario);
+    barAnimado.addEventListener("click",animar);
+
+    
+}
+
+
+
+function animar(){
+    line1.classList.toggle("activeline--top");
+    line2.classList.toggle("activeline--middle");
+    line3.classList.toggle("activeline--bottom");
 }
 
 const validarCorreo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -89,16 +106,20 @@ function borrarCampos(){
 }
 
 function mostrarNav() {
+    
     if (nav.style.display == "none") {
-
         nav.style.display = "block";
     }
     else {
         nav.style.display = "none";
+        
     }
 }
 
 window.onscroll = () => {
+    if(nav.style.display == 'block'){
+        animar();
+    }
     nav.style.display = 'none';
 }
 
